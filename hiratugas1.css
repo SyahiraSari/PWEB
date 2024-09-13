@@ -27,7 +27,7 @@ body {
 }
 
 .header-background {
-    background-image: url('/mnt/data/photo-1578854955076-970394ef2512.jpeg'); /* Menggunakan gambar lokal yang diunggah */
+    background-image: url('https://images.unsplash.com/photo-1578854955076-970394ef2512?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNTIzMHwwfDF8c2VhcmNofDN8fHN0cmVldHdlYXJ8ZW58MHx8fHwxNjY2ODkxNzM5&ixlib=rb-4.0.3&q=80&w=1080');
     background-size: cover;
     background-position: center;
     height: 150px;
@@ -53,32 +53,83 @@ body {
     border: 4px solid white;
 }
 
+/* Font color updated to black */
 h1 {
     font-size: 24px;
-    color: #333;
+    color: black; /* Changed to black */
 }
 
 p {
     font-size: 14px;
-    color: #777;
+    color: black; /* Changed to black */
 }
 
+/* Button updates - background to white, font color to black */
 .links-section {
     display: flex;
     flex-direction: column;
 }
 
 .link-btn {
-    background-color: #007bff;
-    color: white;
+    background-color: white; /* Button background changed to white */
+    color: black; /* Button text color changed to black */
     text-decoration: none;
     padding: 12px;
     margin: 10px 0;
     border-radius: 5px;
     font-size: 18px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1px solid white; /* Adding a border for better contrast */
 }
 
+
+/* Existing CSS remains unchanged */
+
+h3.shop-mall-heading {
+    font-size: 20px;
+    color: black;  /* Make the font color black to match the rest */
+    margin-top: 15px;  /* Adds space between elements */
+    font-weight: bold;  /* Makes the SHOP MALL heading bold */
+    text-transform: uppercase;  /* Makes the text uppercase */
+    border-bottom: 2px solid white;  /* Optional: Adds a blue underline to SHOP MALL */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+
 .link-btn:hover {
-    background-color: #0056b3;
+    background-color: #f4f4f4; /* Hover effect slightly changes button background */
+    color: white; /* Hover effect changes text color */
+}
+
+
+/* Existing CSS remains unchanged */
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Light transparent background */
+    border-radius: 30px; /* Rounded shape */
+    padding: 10px 20px; /* Padding for the button */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease;
+    max-width: 300px; /* Optional: Limit the button width */
+    margin: 20px auto; /* Center it horizontally */
+}
+
+.menu-icon {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 18px; /* Icon size */
+    color: black; /* Color of the icon */
+}
+
+.menu-link {
+    text-decoration: none;
+    font-size: 16px;
+    color: black; /* Black text color */
+    font-weight: bold;
+}
+
+.menu-button:hover {
+    background-color: rgba(255, 255, 255, 1); /* Solid background on hover */
 }
