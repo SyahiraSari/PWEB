@@ -12,15 +12,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 130vh;
 }
 
 .container {
-    width: 90%;
-    max-width: 400px;
-    padding: 20px;
+    width: 60%;
+    max-width:none;
+    padding: 100px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -28,15 +27,15 @@ body {
 
 .header-background {
     background-image: url('https://images.unsplash.com/photo-1578854955076-970394ef2512?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNTIzMHwwfDF8c2VhcmNofDN8fHN0cmVldHdlYXJ8ZW58MHx8fHwxNjY2ODkxNzM5&ixlib=rb-4.0.3&q=80&w=1080');
-    background-size: cover;
+    background-size:0%;
     background-position: center;
-    height: 150px;
-    width: 100%;
-    position: absolute;
-    top: 0;
+    height: 900px;
+    width: 50%;
+    position:absolute;
+    top: 70;
     left: 0;
     z-index: -1;
-    opacity: 0.8;
+    opacity: 1,0;
 }
 
 .profile-section {
@@ -51,11 +50,14 @@ profile-container {
     align-items: center;
 }
 
+
+
 .profile-image {
-    width: 96px;
-    height: 96px;
+    width: 100px;
+    height: 102px;
     border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
     object-fit: cover;   /* Menyesuaikan gambar dalam lingkaran */
+    margin-top: 250px;
 }
 .profile-img {
     width: 100px;
@@ -68,14 +70,37 @@ profile-container {
 
 /* Font color updated to black */
 h1 {
-    font-size: 24px;
+    font-size: 22px;
     color: white; /* Changed to black */
 }
 
 p {
-    font-size: 14px;
+    font-size: 17px;
     color: white; /* Changed to black */
+    margin-top: 10px;
 }
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.social-link {
+    text-decoration: none;
+}
+
+.social-link svg {
+    width: 24px; /* Increase size of icons */
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover svg {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
 
 /* Button updates - background to white, font color to black */
 .links-section {
@@ -87,31 +112,30 @@ p {
     background-color: white; /* Button background changed to white */
     color: black; /* Button text color changed to black */
     text-decoration: none;
-    padding: 12px;
+    padding: 22px;
     margin: 10px 0;
     border-radius: 5px;
     font-size: 18px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    border: 1px solid white; /* Adding a border for better contrast */
+    border: 3px solid white; /* Adding a border for better contrast */
 }
 
 
 /* Existing CSS remains unchanged */
 
-h3.shop-mall-heading {
-    font-size: 20px;
+h3.shop-small-heading {
+    font-size: 18px;
     color: white;  /* Make the font color black to match the rest */
     margin-top: 15px;  /* Adds space between elements */
-    font-weight: bold;  /* Makes the SHOP MALL heading bold */
-    text-transform: uppercase;  /* Makes the text uppercase */
-    border-bottom: 2px solid white;  /* Optional: Adds a blue underline to SHOP MALL */
+    font-weight: /* Makes the SHOP MALL heading bold */
+    text-transform-uppercase; /* Makes the text uppercase */
     display: inline-block;
     padding-bottom: 5px;
 }
 
 
 .link-btn:hover {
-    background-color: #f4f4f4; /* Hover effect slightly changes button background */
+    background-color: transparent; /* Hover effect slightly changes button background */
     color: white; /* Hover effect changes text color */
 }
 
@@ -122,12 +146,12 @@ h3.shop-mall-heading {
     display: flex;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.8); /* Light transparent background */
-    border-radius: 30px; /* Rounded shape */
+    border-radius: 85px; /* Rounded shape */
     padding: 10px 20px; /* Padding for the button */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     transition: background-color 0.3s ease;
     max-width: 300px; /* Optional: Limit the button width */
-    margin: 20px auto; /* Center it horizontally */
+    margin: 50px auto; /* Center it horizontally */
 }
 
 .menu-icon {
