@@ -9,20 +9,24 @@
 body {
     background-image: url(https://images.unsplash.com/photo-1578854955076-970394ef2512?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNTIzMHwwfDF8c2VhcmNofDN8fHN0cmVldHdlYXJ8ZW58MHx8fHwxNjY2ODkxNzM5&ixlib=rb-4.0.3&q=80&w=1080);
     background-color:transparent;
-    display: flex;
-    justify-content: center;
+    background-size: cover; /* Pastikan background menutupi seluruh area */
+    background-position: center; /* Posisikan background di tengah */
+    background-attachment: fixed; /* Agar background tetap saat scrolling */
+    display:flex;
+    justify-content:center;
     align-items: center;
     height: 130vh;
 }
 
 .container {
-    width: 60%;
+    width: 63%;
     max-width:none;
     padding: 100px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;
     overflow: hidden;
+    margin-top: 15px;
 }
 
 .header-background {
@@ -32,8 +36,8 @@ body {
     height: 900px;
     width: 50%;
     position:absolute;
-    top: 70;
-    left: 0;
+    top: 10;
+    left: 10;
     z-index: -1;
     opacity: 1,0;
 }
@@ -54,24 +58,22 @@ profile-container {
 
 .profile-image {
     width: 100px;
-    height: 102px;
-    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
-    object-fit: cover;   /* Menyesuaikan gambar dalam lingkaran */
-    margin-top: 250px;
-}
-.profile-img {
-    width: 100px;
     height: 100px;
-    border-radius: 50%;
+    border-radius: 100%; /* Membuat gambar berbentuk lingkaran */
+    object-fit: cover;   /* Menyesuaikan gambar dalam lingkaran */
+    margin-top: 150px;
     object-fit: cover;
-    margin-bottom: 15px;
+    margin-bottom: 7px;
     border: 4px solid white;
 }
 
 /* Font color updated to black */
 h1 {
-    font-size: 22px;
+    font-size: 20px;
     color: white; /* Changed to black */
+    margin-top: 15px;
+    font-weight:375px;
+    
 }
 
 p {
@@ -85,6 +87,7 @@ p {
     gap: 20px; /* Space between icons */
     margin-top: 20px;
     margin-bottom: 20px;
+
 }
 
 .social-link {
@@ -113,11 +116,11 @@ p {
     color: black; /* Button text color changed to black */
     text-decoration: none;
     padding: 22px;
-    margin: 10px 0;
+    margin: 10px;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 16px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    border: 3px solid white; /* Adding a border for better contrast */
+    border: 2px solid white; /* Adding a border for better contrast */
 }
 
 
@@ -127,10 +130,10 @@ h3.shop-small-heading {
     font-size: 18px;
     color: white;  /* Make the font color black to match the rest */
     margin-top: 15px;  /* Adds space between elements */
-    font-weight: /* Makes the SHOP MALL heading bold */
-    text-transform-uppercase; /* Makes the text uppercase */
+    font-weight: 100px; /* Makes the SHOP MALL heading bold */
+     /* Makes the text uppercase */
     display: inline-block;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
 }
 
 
@@ -148,16 +151,20 @@ h3.shop-small-heading {
     background-color: rgba(255, 255, 255, 0.8); /* Light transparent background */
     border-radius: 85px; /* Rounded shape */
     padding: 10px 20px; /* Padding for the button */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.324); /* Subtle shadow */
     transition: background-color 0.3s ease;
-    max-width: 300px; /* Optional: Limit the button width */
+    max-width: 400px; /* Optional: Limit the button width */
     margin: 50px auto; /* Center it horizontally */
+    margin-bottom: 0px;
+    margin-top: 30px;
 }
 
 .menu-icon {
     margin-right: 10px; /* Space between icon and text */
     font-size: 18px; /* Icon size */
     color: black; /* Color of the icon */
+
+    
 }
 
 .menu-link {
@@ -169,4 +176,5 @@ h3.shop-small-heading {
 
 .menu-button:hover {
     background-color: rgba(255, 255, 255, 1); /* Solid background on hover */
+    
 }
