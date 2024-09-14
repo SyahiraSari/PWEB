@@ -7,7 +7,8 @@
 }
 
 body {
-    background-color: #f4f4f4;
+    background-image: url(https://images.unsplash.com/photo-1578854955076-970394ef2512?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNTIzMHwwfDF8c2VhcmNofDN8fHN0cmVldHdlYXJ8ZW58MHx8fHwxNjY2ODkxNzM5&ixlib=rb-4.0.3&q=80&w=1080);
+    background-color:transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +16,6 @@ body {
 }
 
 .container {
-    background-color: white;
     width: 90%;
     max-width: 400px;
     padding: 20px;
@@ -44,6 +44,19 @@ body {
     z-index: 1;
 }
 
+
+profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+    object-fit: cover;   /* Menyesuaikan gambar dalam lingkaran */
+}
 .profile-img {
     width: 100px;
     height: 100px;
@@ -56,12 +69,12 @@ body {
 /* Font color updated to black */
 h1 {
     font-size: 24px;
-    color: black; /* Changed to black */
+    color: white; /* Changed to black */
 }
 
 p {
     font-size: 14px;
-    color: black; /* Changed to black */
+    color: white; /* Changed to black */
 }
 
 /* Button updates - background to white, font color to black */
@@ -87,7 +100,7 @@ p {
 
 h3.shop-mall-heading {
     font-size: 20px;
-    color: black;  /* Make the font color black to match the rest */
+    color: white;  /* Make the font color black to match the rest */
     margin-top: 15px;  /* Adds space between elements */
     font-weight: bold;  /* Makes the SHOP MALL heading bold */
     text-transform: uppercase;  /* Makes the text uppercase */
