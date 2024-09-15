@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font globally */
 }
 
 body {
@@ -61,7 +61,7 @@ profile-container {
     height: 100px;
     border-radius: 100%; /* Membuat gambar berbentuk lingkaran */
     object-fit: cover;   /* Menyesuaikan gambar dalam lingkaran */
-    margin-top: 150px;
+    margin-top: 140px;
     object-fit: cover;
     margin-bottom: 7px;
     border: 4px solid white;
@@ -69,18 +69,21 @@ profile-container {
 
 /* Font color updated to black */
 h1 {
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
-    color: white; /* Changed to black */
-    margin-top: 15px;
-    font-weight:375px;
-    
+    color: white;
+    margin-top: 5px;
+    font-weight:bold; /* Slightly bold */
 }
 
+
 p {
+    font-family: 'Poppins', sans-serif;
     font-size: 17px;
-    color: white; /* Changed to black */
+    color: white;
     margin-top: 10px;
 }
+
 .social-icons {
     display: flex;
     justify-content: center;
