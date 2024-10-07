@@ -1,0 +1,5 @@
+ **/ id untuk javascript 10 digit angka, name untuk form /**
+
+FORM VALIDATION:
+false untuk stop
+true untuk lanjut
